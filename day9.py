@@ -92,10 +92,12 @@
 #     print(i*10)
 
 # CALCULATE THE SUM OF FIRST GIVEN N NUMBER.
-num = int(input("Enter a number: "))
+# num = int(input("Enter a number: "))
 
-sum = 0
+# sum = 0
 
-for i in range(1,(num+1)):
-    sum = sum + i 
-    print(f"sum of {num} numbers = {sum} ")
+# for i in range(1,(num+1)):
+#     sum = sum + i 
+#     print(f"sum of {num} numbers = {sum} ")
+for i in range(100):
+    print(i)
