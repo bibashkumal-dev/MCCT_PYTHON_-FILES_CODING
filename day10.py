@@ -123,7 +123,41 @@
 #     print(i)
 
 #NESTED LOOP: LOOP INSIDE ANOTHER LOOP.
-for i in range(1, 4):
-    for j in range(1, 4):
-        print(f"i: {i}, j: {j}")
+# for i in range(1, 4):
+#     for j in range(1, 4):
+#         print(f"i: {i}, j: {j}")
+
+#HOMEWORK: ATM WITHDRAW MECHANISM USING WHILE LOOP AND IF ELSE CONDITION.
+
+while True:
+    print("\nATM")
+    print("1. Check Balance")
+    print("2. Withdraw")
+    print("3. Exit")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        print("Your balance is:", 10000)
+
+    elif choice == "2":
+        amount = int(input("Enter withdrawal amount: "))
+
+        if amount <= 0:
+            print("Invalid amount!")
+
+        elif amount > 10000:
+            print("Insufficient balance!")
+
+        else:
+            balance = 10000 - amount
+            print("Withdrawal successful!")
+            print("Remaining balance:", balance)
+
+    elif choice == "3":
+        print("Thank you for using ATM.")
+        break
+
+    else:
+        print("Invalid choice!")
           
